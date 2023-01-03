@@ -33,3 +33,10 @@ pip install pandas
 pip install selenium
 pip install beautifulsoup4
 ```
+
+
+## Chrome Driver
+
+For the program to work properly, a chrome driver must be installed that is compatible with the version of google chrome installed on your computer. https://chromedriver.chromium.org/downloads download the correct version from this link.
+
+  
