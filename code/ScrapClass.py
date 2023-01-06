@@ -55,7 +55,7 @@ class Scraping:
                 ad_list2[i].click()
                 self.scraping_data()
             except :
-                print(f"{i} ilanda hata var")
+                pass
 
     def program(self):
         loop = browser.find_element(By.XPATH,
