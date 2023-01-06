@@ -42,10 +42,9 @@ class Scraping:
             self.file.write(price.text.split(" ")[0].replace(".", ""))
             self.file.write("\n")
             browser.back()
-            browser.switch_to.window(browser.window_handles[0])
         except:
             browser.back()
-            browser.switch_to.window(browser.window_handles[0])
+
     def page_data(self, loops):
         for i in range(loops):
             try:
@@ -63,6 +62,7 @@ class Scraping:
                                     '//*[@id="searchResultsSearchForm"]/div/div[3]/div[1]/div[2]/div[1]/div/div['
                                     '1]/div/div[3]/span')
         page_numbers = int(loop.text.replace(" ilan", "").replace(".","")) // 20
+        if page_numbers > 49 : page_numbers = 49
         for page in range(page_numbers + 1):
             number = browser.find_elements(By.CLASS_NAME, "searchResultsItem     ")
             edited_number = list(filter(lambda x: lambda x: not x.get_attribute("class").__eq__("searchResultsItem nativeAd classicNativeAd"), number))
