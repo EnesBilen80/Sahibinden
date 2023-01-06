@@ -98,8 +98,8 @@ class ScrapData(object):
         self.district.addItems(districts[city])
 
     def scrap_button(self):
-        city = self.city.currentText().lower().replace("ı","i").replace("ü","u").replace("ö","o").replace("ş","s").replace("ğ","g").replace("ç","c").replace(" ","-")
-        district = self.district.currentText().lower().replace("ı","i").replace("ü","u").replace("ö","o").replace("ş","s").replace("ğ","g").replace("ç","c").replace(" ","-")
+        city = self.city.currentText().replace("İ","i").lower().replace("ı","i").replace("ü","u").replace("ö","o").replace("ş","s").replace("ğ","g").replace("ç","c").replace(" ","-").lower()
+        district = self.district.currentText().replace("İ","i").lower().replace("ı","i").replace("ü","u").replace("ö","o").replace("ş","s").replace("ğ","g").replace("ç","c").replace(" ","-").lower()
         url = "https://www.sahibinden.com/satilik-daire/"
         if district != "all":
             url += city+"-"+district
