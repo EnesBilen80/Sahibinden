@@ -30,7 +30,6 @@ write the following codes
 pip install PyQt5
 pip install pandas
 pip install selenium
-
 ```
 
 
