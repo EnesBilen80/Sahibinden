@@ -20,7 +20,6 @@ What things you need to install the software
 
 •Pandas
 
-•BeautifulSoup
 
 
 
@@ -31,7 +30,7 @@ write the following codes
 pip install PyQt5
 pip install pandas
 pip install selenium
-pip install beautifulsoup4
+
 ```
 
 
