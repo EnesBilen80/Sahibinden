@@ -1,7 +1,7 @@
 # HOUSE PRICE PREDICTION
 
 Program extracts home data from sahibinden.com and uses this data in machine learning to make an optimum price estimation.
-
+Once the program has finished the data scraping process or if you manually close the browser, the scraped data will be saved. To view the data, close the application interface and go to the 'datasets' folder.
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
